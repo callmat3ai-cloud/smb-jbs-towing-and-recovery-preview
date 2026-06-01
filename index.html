@@ -1,434 +1,2049 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JBS Towing and Recovery | Chaparral, NM</title>
-  <meta name="description" content="JBS Towing and Recovery — professional Cleaning Service services in Chaparral, NM." />
-  <meta property="og:title" content="JBS Towing and Recovery | Chaparral, NM" />
-  <meta property="og:description" content="Professional Cleaning Service services in Chaparral, NM." />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80&fm=webp" />
-  <meta property="og:type" content="website" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JBS Towing and Recovery | 24/7 Towing &amp; Roadside Assistance Chaparral, NM</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Professional 24/7 emergency towing and roadside recovery in Chaparral, NM. JBS Towing and Recovery provides flatbed towing, lockout assistance, winching, tire changes, jump starts, and heavy equipment transport. Fast, safe, and dependable. Call +1 575-386-0170.">
+  <meta name="keywords" content="towing Chaparral NM, roadside assistance Chaparral, emergency towing, flatbed towing, vehicle lockout, tire change NM, jump starts, vehicle recovery, JBS Towing, 776 Hermosa Dr">
+  <meta name="author" content="JBS Towing and Recovery">
+  <link rel="canonical" href="https://jbscustoms.com">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jbscustoms.com">
+  <meta property="og:title" content="JBS Towing and Recovery | 24/7 Roadside Assistance &amp; Towing">
+  <meta property="og:description" content="Locked out? Broken down? Stuck? JBS Towing and Recovery provides professional, damage-free towing and roadside assistance 24/7 in Chaparral, NM. Call (575) 386-0170.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta property="og:site_name" content="JBS Towing and Recovery">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JBS Towing and Recovery | 24/7 Roadside Assistance &amp; Towing">
+  <meta name="twitter:description" content="Call (575) 386-0170 for 24/7 towing and recovery in Chaparral, NM. Flatbed transport, roadside assistance, and vehicle winching.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1200&h=630&q=80">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    /* ===== RESET ===== */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Sora', sans-serif;
-      color: #2a1f1a;
-      background: #FDFAF6;
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-    }
-
+    /* DESIGN SYSTEM & CUSTOM PROPERTIES */
     :root {
-      --accent:      #0e9f6e;
-      --accent-dark: #047857;
-      --accent-bg:   #0e9f6e14;
-      --ink:         #2a1f1a;
-      --ink-2:       #6b5c50;
-      --ink-3:       #a09590;
-      --cream-1:     #FDFAF6;
-      --cream-2:     #F5EFE6;
-      --cream-3:     #EDE5D8;
-      --border:      #e5ddd5;
-      --white:       #ffffff;
+      --primary-teal: #008080;
+      --primary-dark: #004d4d;
+      --primary-light: #e6f2f2;
+      --primary-rgb: 0, 128, 128;
+      
+      --accent-color: #20b2aa;
+      --bg-white: #ffffff;
+      --bg-light: #f5fafb;
+      --bg-slate: #0b1515;
+      
+      --text-dark: #121e1e;
+      --text-muted: #536767;
+      --text-light: #f5fafb;
+      
+      --border-color: #d2e3e3;
+      --border-light: #eef5f5;
+      
+      --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      
+      --transition-base: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      
+      --radius-sm: 4px;
+      --radius-md: 12px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+      
+      --shadow-sm: 0 4px 6px -1px rgba(0, 80, 80, 0.03), 0 2px 4px -1px rgba(0, 80, 80, 0.02);
+      --shadow-md: 0 10px 15px -3px rgba(0, 80, 80, 0.05), 0 4px 6px -2px rgba(0, 80, 80, 0.03);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 80, 80, 0.08), 0 10px 10px -5px rgba(0, 80, 80, 0.04);
+      --shadow-premium: 0 30px 60px -15px rgba(0, 80, 80, 0.12);
+      
+      --sidebar-width: 360px;
     }
 
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
+    /* CSS RESET & GENERAL STYLES */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    /* ===== TOP BAR ===== */
-    .topbar {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      padding: clamp(12px, 3vw, 16px) clamp(16px, 5vw, 48px);
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
-    .topbar-inner {
-      max-width: 960px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text-dark);
+      background-color: var(--bg-white);
+      line-height: 1.6;
+      overflow-x: hidden;
     }
-    .topbar-brand { font-size: clamp(0.9rem, 3vw, 1.05rem); font-weight: 700; color: var(--ink); }
-    .topbar-phone {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: var(--accent);
-      color: #fff;
-      font-size: clamp(0.75rem, 2.5vw, 0.88rem);
+
+    /* CUSTOM SCROLLBAR */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-white);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--primary-teal);
+      border-radius: var(--radius-full);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--primary-dark);
+    }
+
+    /* TYPOGRAPHY */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
       font-weight: 700;
-      padding: clamp(7px, 2vw, 10px) clamp(14px, 3vw, 20px);
-      border-radius: 99px;
-      transition: background 0.15s;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
     }
-    .topbar-phone:hover { background: var(--accent-dark); }
 
-    /* ===== HERO — split layout, business image left ===== */
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      min-height: clamp(380px, 60vw, 560px);
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition-base);
     }
-    .hero-img-col {
-      background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80&fm=webp');
+
+    /* BUTTONS */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 1rem 2rem;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      border: 1px solid transparent;
+      outline: none;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background-color: var(--primary-teal);
+      color: var(--bg-white);
+      box-shadow: 0 4px 14px rgba(0, 128, 128, 0.25);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 128, 128, 0.35);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--primary-teal);
+      border-color: var(--primary-teal);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--primary-light);
+      transform: translateY(-3px);
+    }
+
+    .btn-white {
+      background-color: var(--bg-white);
+      color: var(--primary-teal);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-white:hover {
+      background-color: var(--primary-light);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* UNIQUE SIDEBAR LAYOUT STYLES */
+    .app-layout {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    /* SIDEBAR (Desktop Left Nav, Mobile Top Header) */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: var(--sidebar-width);
+      background-color: var(--bg-white);
+      border-right: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 3rem 2.5rem;
+      z-index: 100;
+      transition: var(--transition-smooth);
+    }
+
+    .sidebar-header {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.15rem;
+    }
+
+    .logo-accent {
+      font-family: var(--font-heading);
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: var(--primary-teal);
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .logo-text {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    /* Pulser Dot Status Badge */
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var(--primary-light);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-full);
+      width: fit-content;
+      border: 1px solid rgba(0, 128, 128, 0.15);
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #10b981;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .pulse-dot::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #10b981;
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      animation: pulse 1.8s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+      100% {
+        transform: scale(2.5);
+        opacity: 0;
+      }
+    }
+
+    .status-text {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Navigation links in sidebar */
+    .sidebar-nav {
+      margin: 2.5rem 0;
+    }
+
+    .sidebar-nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .nav-link {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      position: relative;
+      padding-left: 0;
+      display: inline-block;
+    }
+
+    .nav-link::before {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--primary-teal);
+      transition: var(--transition-base);
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--primary-teal);
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+      width: 24px;
+    }
+
+    /* Dispatch Quick Contact in Sidebar */
+    .sidebar-cta-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .btn-call {
+      width: 100%;
+      background-color: var(--primary-teal);
+      color: var(--bg-white);
+      box-shadow: 0 4px 12px rgba(0, 128, 128, 0.2);
+    }
+
+    .btn-call:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0, 128, 128, 0.3);
+    }
+
+    .cta-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-align: left;
+    }
+
+    .sidebar-footer {
+      border-top: 1px solid var(--border-light);
+      padding-top: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-info-small {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .contact-info-small p {
+      line-height: 1.4;
+    }
+
+    .contact-info-small a:hover {
+      color: var(--primary-teal);
+    }
+
+    /* HAMBURGER MENU FOR MOBILE */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      z-index: 200;
+    }
+
+    .hamburger-box {
+      width: 24px;
+      height: 18px;
+      display: block;
+      position: relative;
+    }
+
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+      width: 24px;
+      height: 2px;
+      background-color: var(--text-dark);
+      position: absolute;
+      border-radius: var(--radius-full);
+      transition: var(--transition-base);
+    }
+
+    .hamburger-inner {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .hamburger-inner::before {
+      content: '';
+      top: -8px;
+    }
+
+    .hamburger-inner::after {
+      content: '';
+      bottom: -8px;
+    }
+
+    /* Open state for hamburger */
+    .app-container.nav-open .hamburger-inner {
+      background-color: transparent;
+    }
+
+    .app-container.nav-open .hamburger-inner::before {
+      transform: translateY(8px) rotate(45deg);
+      background-color: var(--text-dark);
+    }
+
+    .app-container.nav-open .hamburger-inner::after {
+      transform: translateY(-8px) rotate(-45deg);
+      background-color: var(--text-dark);
+    }
+
+    /* MAIN CONTENT VIEWPORT */
+    .main-content {
+      margin-left: var(--sidebar-width);
+      width: calc(100% - var(--sidebar-width));
+      min-height: 100vh;
+      transition: var(--transition-smooth);
+    }
+
+    /* SECTIONS CONFIG */
+    section {
+      padding: clamp(5rem, 8vw, 8rem) clamp(2rem, 5vw, 6rem);
+      width: 100%;
+      border-bottom: 1px solid var(--border-light);
+      position: relative;
+    }
+
+    /* SECTION HEADERS (Left aligned, premium typography) */
+    .section-header {
+      max-width: 680px;
+      margin-bottom: clamp(3rem, 6vw, 5rem);
+      text-align: left;
+    }
+
+    .section-subtitle {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--primary-teal);
+      margin-bottom: 0.75rem;
+      display: inline-block;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      color: var(--text-dark);
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+    }
+
+    .section-title::before {
+      content: '';
+      display: block;
+      width: 48px;
+      height: 4px;
+      background-color: var(--primary-teal);
+      margin-bottom: 1.5rem;
+    }
+
+    .section-desc {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    /* 1. HERO SECTION */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: var(--bg-slate);
+      color: var(--text-light);
+      padding: clamp(6rem, 10vw, 10rem) clamp(2rem, 5vw, 6rem);
+      position: relative;
+      overflow: hidden;
+      border-bottom: none;
+    }
+
+    .hero-image {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1920&q=80');
       background-size: cover;
       background-position: center;
-      min-height: clamp(200px, 35vw, 320px);
+      opacity: 0.35;
+      filter: grayscale(20%) contrast(105%);
+      z-index: 0;
     }
-    .hero-text-col {
-      background: var(--white);
-      display: flex; flex-direction: column; justify-content: center;
-      padding: clamp(32px, 6vw, 64px) clamp(24px, 5vw, 56px);
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(11, 21, 21, 0.95) 0%, rgba(0, 48, 48, 0.85) 100%);
+      z-index: 1;
     }
-    .hero-badge {
-      display: inline-block;
-      background: var(--accent-bg);
-      color: var(--accent);
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 4px 10px;
-      border-radius: 4px;
-      margin-bottom: clamp(14px, 3vw, 20px);
+
+    .hero-pattern {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 2px 2px, rgba(32, 178, 170, 0.15) 1.5px, transparent 0);
+      background-size: 24px 24px;
+      z-index: 2;
     }
-    .hero h1 {
-      font-size: clamp(1.8rem, 5vw, 3rem);
-      font-weight: 700;
-      color: var(--ink);
-      line-height: 1.12;
-      letter-spacing: -0.02em;
-      margin-bottom: clamp(10px, 2vw, 14px);
-    }
-    .hero-sub {
-      font-size: clamp(0.88rem, 2.5vw, 1.05rem);
-      color: var(--ink-2);
-      margin-bottom: clamp(18px, 3vw, 26px);
-      line-height: 1.55;
-    }
-    .hero-rating {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-size: 0.85rem;
-      color: var(--ink-2);
-      margin-bottom: clamp(20px, 4vw, 28px);
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      max-width: 840px;
       display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+      text-align: left;
     }
-    .hero-stars { color: #f59e0b; letter-spacing: 1px; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
-    .btn-primary {
-      display: inline-flex; align-items: center; gap: 7px;
-      background: var(--accent);
-      color: #fff;
-      font-size: clamp(0.82rem, 2.5vw, 0.95rem);
-      font-weight: 700;
-      padding: clamp(10px, 2vw, 13px) clamp(16px, 3.5vw, 22px);
-      border-radius: 8px;
-      transition: background 0.15s, transform 0.15s;
-    }
-    .btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); }
-    .btn-outline {
-      display: inline-flex; align-items: center; gap: 7px;
-      background: transparent;
-      color: var(--ink);
-      border: 1.5px solid var(--border);
-      font-size: clamp(0.82rem, 2.5vw, 0.95rem);
-      font-weight: 600;
-      padding: clamp(10px, 2vw, 13px) clamp(16px, 3.5vw, 22px);
-      border-radius: 8px;
-      transition: border-color 0.15s, color 0.15s;
-    }
-    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
-    /* ===== WRAP ===== */
-    .wrap { max-width: 960px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 48px); }
-    .wrap--narrow { max-width: 680px; }
-
-    /* ===== SECTIONS ===== */
-    .section { padding: clamp(48px, 8vw, 80px) 0; }
-    .section--tinted { background: var(--cream-2); }
-    .section--white  { background: var(--white); }
-    .section-header { margin-bottom: clamp(24px, 4vw, 36px); }
-    .section-label {
-      font-size: 0.68rem;
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: rgba(0, 128, 128, 0.25);
+      border: 1px solid var(--accent-teal);
+      padding: 0.5rem 1.25rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
       font-weight: 700;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 6px;
-    }
-    .section-title {
-      font-size: clamp(1.4rem, 4vw, 2rem);
-      font-weight: 700;
-      color: var(--ink);
-      line-height: 1.2;
+      color: var(--accent-teal);
     }
 
-    /* ===== SERVICES — illustrated cards ===== */
+    .hero-title {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 1.1;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-title span {
+      display: block;
+      color: var(--accent-teal);
+    }
+
+    .hero-tagline {
+      font-size: clamp(1.15rem, 2vw, 1.4rem);
+      color: rgba(245, 250, 251, 0.8);
+      max-width: 600px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    /* 2. SERVICES SECTION */
+    .services {
+      background-color: var(--bg-white);
+    }
+
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
-      gap: clamp(14px, 2.5vw, 20px);
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      width: 100%;
     }
+
     .service-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: clamp(20px, 3.5vw, 28px);
-      transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+      background-color: var(--bg-white);
+      border: 1px solid var(--border-color);
+      padding: 3rem 2rem;
+      border-radius: var(--radius-md);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+      transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
     }
+
+    .service-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 0;
+      background-color: var(--primary-teal);
+      transition: var(--transition-base);
+    }
+
+    /* Service Card Hover state */
     .service-card:hover {
-      box-shadow: 0 8px 32px rgba(42, 31, 26, 0.1);
-      transform: translateY(-4px);
-      border-color: var(--accent);
+      border-color: transparent;
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-premium);
     }
-    .service-icon {
-      font-size: clamp(1.6rem, 4vw, 2.2rem);
-      line-height: 1;
-      margin-bottom: clamp(12px, 2vw, 16px);
+
+    .service-card:hover::after {
+      height: 100%;
     }
-    .service-card h3 {
-      font-size: clamp(0.88rem, 2.5vw, 1rem);
-      font-weight: 600;
-      color: var(--ink);
-      margin-bottom: 6px;
-      line-height: 1.3;
+
+    .service-number {
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--primary-teal);
+      opacity: 0.5;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
     }
-    .service-card p {
-      font-size: clamp(0.78rem, 2vw, 0.85rem);
-      color: var(--ink-2);
+
+    /* Service circular icon frame */
+    .service-icon-frame {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: var(--primary-light);
+      color: var(--primary-teal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition-smooth);
+    }
+
+    .service-icon-frame svg {
+      width: 28px;
+      height: 28px;
+      stroke-width: 2.25;
+    }
+
+    .service-card:hover .service-icon-frame {
+      background-color: var(--primary-teal);
+      color: var(--bg-white);
+      transform: scale(1.1);
+    }
+
+    .service-card-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .service-card-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
       line-height: 1.6;
     }
 
-    /* ===== INFO STRIP ===== */
-    .info-strip {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
-      gap: clamp(12px, 2vw, 16px);
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: clamp(20px, 3.5vw, 28px);
+    .service-features-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+      margin-top: auto;
     }
-    .info-item {}
-    .info-item-label {
-      font-size: 0.65rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--ink-3);
-      margin-bottom: 6px;
-    }
-    .info-item-value {
-      font-size: clamp(0.88rem, 2.5vw, 0.98rem);
-      color: var(--ink);
-      font-weight: 500;
-      line-height: 1.45;
-    }
-    .info-item a.info-link {
-      color: var(--accent);
+
+    .service-feature-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
       font-weight: 600;
     }
-    .info-item a.info-link:hover { opacity: 0.8; }
 
-    /* ===== MAP ===== */
-    .map-wrap {
-      border-radius: 16px;
+    .service-feature-item svg {
+      width: 16px;
+      height: 16px;
+      color: var(--primary-teal);
+      flex-shrink: 0;
+    }
+
+    /* 3. ABOUT SECTION (Two-column layout) */
+    .about {
+      background-color: var(--bg-light);
+    }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: clamp(3rem, 6vw, 6rem);
+      align-items: center;
+    }
+
+    .about-text-column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+      text-align: left;
+    }
+
+    .about-lead {
+      font-size: 1.3rem;
+      color: var(--primary-dark);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .about-paragraph {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .about-visual-column {
+      position: relative;
+      width: 100%;
+    }
+
+    .about-image-wrapper {
+      position: relative;
+      border-radius: var(--radius-md);
       overflow: hidden;
-      border: 1px solid var(--border);
-      margin-top: clamp(16px, 3vw, 24px);
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 4/5;
     }
-    .map-wrap iframe { width: 100%; height: clamp(200px, 28vw, 280px); border: 0; display: block; }
 
-    /* ===== FOOTER ===== */
-    footer {
-      background: var(--ink);
-      padding: clamp(28px, 5vw, 44px) clamp(16px, 4vw, 48px);
-      text-align: center;
+    .about-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(10%) contrast(105%);
+      transition: var(--transition-smooth);
     }
-    .footer-inner { max-width: 960px; margin: 0 auto; }
-    footer p { font-size: 0.8rem; color: rgba(255,255,255,0.45); line-height: 1.8; }
-    footer a { color: rgba(255,255,255,0.6); transition: color 0.15s; }
-    footer a:hover { color: rgba(255,255,255,0.9); }
 
-    /* ===== STICKY BAR ===== */
-    .sticky-bar {
-      position: fixed; bottom: 0; left: 0; right: 0;
-      background: rgba(253, 250, 246, 0.97);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-top: 1px solid var(--border);
-      padding: clamp(10px, 2vw, 14px) clamp(16px, 4vw, 24px);
-      display: flex; align-items: center; justify-content: space-between; gap: 12px;
-      z-index: 100;
-      box-shadow: 0 -4px 24px rgba(42, 31, 26, 0.08);
+    .about-image-wrapper:hover .about-image {
+      transform: scale(1.05);
     }
-    .sticky-bar-info { min-width: 0; }
-    .sticky-bar-name {
-      font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+
+    /* Stat overlay card on image */
+    .about-stat-card {
+      position: absolute;
+      bottom: -2rem;
+      left: -2rem;
+      background-color: var(--bg-white);
+      padding: 2.5rem 2rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-premium);
+      border: 1px solid var(--border-light);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      z-index: 10;
+      max-width: 280px;
+    }
+
+    .stat-block {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .stat-number {
+      font-family: var(--font-heading);
+      font-size: 2.25rem;
       font-weight: 700;
-      color: var(--ink);
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      color: var(--primary-teal);
+      line-height: 1;
     }
-    .sticky-bar-phone { font-size: clamp(0.7rem, 2vw, 0.78rem); color: var(--ink-2); }
-    .sticky-cta {
-      background: var(--accent);
-      color: #fff;
-      font-weight: 700;
-      font-size: clamp(0.8rem, 2.5vw, 0.9rem);
-      padding: clamp(8px, 2vw, 11px) clamp(16px, 3vw, 22px);
-      border-radius: 8px;
-      white-space: nowrap; flex-shrink: 0;
-      display: flex; align-items: center; gap: 6px;
-      transition: background 0.15s;
-    }
-    .sticky-cta:hover { background: var(--accent-dark); }
-    .pad-bottom { height: clamp(64px, 10vw, 80px); }
 
-    /* ===== MOBILE — stack hero ===== */
-    @media (max-width: 640px) {
-      .hero {
-        grid-template-columns: 1fr;
-        min-height: unset;
+    .stat-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    .about-credentials {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+      width: 100%;
+    }
+
+    .credential-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1rem;
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+
+    .credential-bullet {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: var(--primary-light);
+      color: var(--primary-teal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .credential-bullet svg {
+      width: 14px;
+      height: 14px;
+      stroke-width: 3;
+    }
+
+    /* 4. TESTIMONIALS SECTION */
+    .testimonials {
+      background-color: var(--bg-white);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.5rem;
+      width: 100%;
+    }
+
+    .testimonial-card {
+      background-color: var(--bg-white);
+      border: 1px solid var(--border-color);
+      padding: 3rem 2rem;
+      border-radius: var(--radius-md);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+      transition: var(--transition-smooth);
+    }
+
+    .testimonial-card:hover {
+      border-color: transparent;
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .quote-icon {
+      color: var(--primary-light);
+      width: 40px;
+      height: 40px;
+    }
+
+    .testimonial-quote {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      font-style: normal;
+    }
+
+    .testimonial-footer {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: auto;
+    }
+
+    .testimonial-name {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .testimonial-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 1rem;
+    }
+
+    .testimonial-role {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .testimonial-rating {
+      display: flex;
+      gap: 0.15rem;
+      color: #fbbf24; /* Amber star color */
+    }
+
+    .testimonial-rating svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    /* 5. CONTACT SECTION (Form + Details/Map) */
+    .contact {
+      background-color: var(--bg-light);
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: clamp(3rem, 6vw, 6rem);
+      align-items: start;
+    }
+
+    .contact-form-column {
+      background-color: var(--bg-white);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: clamp(2.5rem, 5vw, 4rem);
+      box-shadow: var(--shadow-md);
+      width: 100%;
+    }
+
+    .contact-form-title {
+      font-size: 1.75rem;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+
+    .form-group-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group.full-width {
+      grid-column: span 2;
+    }
+
+    .form-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .form-input {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      padding: 1rem 1.25rem;
+      border: 1px solid var(--border-color);
+      background-color: var(--bg-white);
+      color: var(--text-dark);
+      border-radius: var(--radius-sm);
+      transition: var(--transition-base);
+      outline: none;
+    }
+
+    .form-input:focus {
+      border-color: var(--primary-teal);
+      box-shadow: 0 0 0 3px rgba(0, 128, 128, 0.1);
+    }
+
+    textarea.form-input {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .form-submit-btn {
+      width: 100%;
+      border: none;
+    }
+
+    .form-success-msg {
+      display: none;
+      background-color: var(--primary-light);
+      border: 1px solid var(--primary-teal);
+      color: var(--primary-dark);
+      padding: 1.5rem;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      margin-top: 1.5rem;
+    }
+
+    .contact-details-column {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      width: 100%;
+    }
+
+    .contact-info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .info-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+    }
+
+    .info-card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-sm);
+      background-color: var(--primary-light);
+      color: var(--primary-teal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .info-card-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .info-card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .info-card-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    .info-card-value {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    .info-card-value a:hover {
+      color: var(--primary-teal);
+    }
+
+    .map-wrapper {
+      width: 100%;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      aspect-ratio: 4/3;
+    }
+
+    .map-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* 6. MINIMALIST LIGHT FOOTER */
+    .footer {
+      background-color: var(--bg-white);
+      padding: 4rem clamp(2rem, 5vw, 6rem);
+      border-top: 1px solid var(--border-light);
+    }
+
+    .footer-layout {
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2.5rem;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+    }
+
+    .footer-logo {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .footer-logo-accent {
+      font-family: var(--font-heading);
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--primary-teal);
+      line-height: 1;
+    }
+
+    .footer-logo-text {
+      font-family: var(--font-heading);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-dark);
+    }
+
+    .footer-nav {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+
+    .footer-nav-link {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .footer-nav-link:hover {
+      color: var(--primary-teal);
+    }
+
+    .footer-divider {
+      width: 100%;
+      height: 1px;
+      background-color: var(--border-light);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .copyright {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .legal-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .legal-link:hover {
+      color: var(--primary-teal);
+    }
+
+    /* MOBILE FLOATING CTA BAR ( stranded driver utility ) */
+    .mobile-call-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--bg-white);
+      border-top: 1px solid var(--border-color);
+      padding: 1rem 1.5rem;
+      box-shadow: 0 -10px 30px rgba(0, 80, 80, 0.08);
+      z-index: 99;
+    }
+
+    .btn-mobile-call {
+      width: 100%;
+      background-color: var(--primary-teal);
+      color: var(--bg-white);
+      height: 52px;
+      font-size: 1.1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+      border-radius: var(--radius-md);
+      box-shadow: 0 4px 12px rgba(0, 128, 128, 0.25);
+    }
+
+    /* SCROLL TRIGGERED REVEAL ANIMATIONS */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-stagger > * {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal-stagger.active > * {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* MEDIA QUERIES (Responsive Web Design) */
+    
+    /* TABLET & MOBILE VIEWPORTS */
+    @media (max-width: 1023px) {
+      .sidebar {
+        flex-direction: row;
+        width: 100%;
+        height: 80px;
+        bottom: auto;
+        padding: 0 2rem;
+        align-items: center;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: var(--shadow-sm);
       }
-      .hero-img-col { min-height: clamp(200px, 50vw, 280px); }
-      .hero-text-col { padding: clamp(24px, 6vw, 36px) clamp(16px, 5vw, 24px); }
-      .services-grid { grid-template-columns: 1fr; }
-      .info-strip { grid-template-columns: 1fr; }
+
+      .sidebar-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .logo-accent {
+        font-size: 1.75rem;
+      }
+
+      .logo-text {
+        font-size: 0.7rem;
+      }
+
+      .status-badge {
+        display: none; /* Hide status badge in tiny top header to preserve space */
+      }
+
+      /* Hide navigation & footer from static sidebar, they go into drawer */
+      .sidebar-nav, .sidebar-cta-container, .sidebar-footer {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      /* Navigation Drawer for Mobile */
+      .sidebar-nav-mobile {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: var(--bg-white);
+        z-index: 98;
+        padding: 3rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        transform: translateX(-100%);
+        transition: var(--transition-smooth);
+        border-top: 1px solid var(--border-light);
+        overflow-y: auto;
+      }
+
+      .app-container.nav-open .sidebar-nav-mobile {
+        transform: translateX(0);
+      }
+
+      .sidebar-nav-mobile ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .sidebar-nav-mobile .nav-link {
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: var(--text-dark);
+      }
+
+      .mobile-status-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: auto;
+      }
+
+      .mobile-status-container .status-badge {
+        display: inline-flex;
+      }
+
+      .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding-top: 80px; /* Offset for top fixed header */
+        padding-bottom: 80px; /* Offset for bottom mobile cta */
+      }
+
+      .mobile-call-bar {
+        display: block;
+      }
+
+      /* Adjust grids and layout to stacked */
+      .about-layout, .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+      }
+
+      .about-visual-column {
+        max-width: 500px;
+        margin: 2rem auto 0 auto;
+      }
+
+      .about-stat-card {
+        bottom: -1rem;
+        left: -1rem;
+        padding: 1.5rem;
+      }
     }
 
-    @media (max-width: 380px) {
-      .topbar-inner { flex-wrap: wrap; }
-    }
+    /* SMALL MOBILE DEVICES */
+    @media (max-width: 640px) {
+      section {
+        padding: clamp(3.5rem, 6vw, 5rem) 1.5rem;
+      }
 
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-      html { scroll-behavior: auto; }
+      .form-group-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .form-group.full-width {
+        grid-column: span 1;
+      }
+
+      .footer {
+        padding: 3rem 1.5rem;
+      }
+
+      .footer-top {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .footer-nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
     }
   </style>
 </head>
 <body>
 
-<!-- ===== TOP BAR ===== -->
-<div class="topbar">
-  <div class="topbar-inner">
-    <div class="topbar-brand">JBS Towing and Recovery</div>
-    <a href="tel:+1 575-386-0170" class="topbar-phone">📞 +1 575-386-0170</a>
+<div class="app-container" id="appContainer">
+
+  <!-- SIDEBAR NAVIGATION / HEADER PANEL -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <span class="logo-accent">JBS</span>
+        <span class="logo-text">Towing &amp; Recovery</span>
+      </div>
+      
+      <!-- Green pulse dot badge -->
+      <div class="status-badge">
+        <span class="pulse-dot"></span>
+        <span class="status-text">Dispatching Now</span>
+      </div>
+
+      <!-- Hamburger mobile button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+
+    <!-- Desktop Nav Links -->
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Our Services</a></li>
+        <li><a href="#about" class="nav-link">About JBS</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Desktop sidebar call CTA -->
+    <div class="sidebar-cta-container">
+      <a href="tel:+15753860170" class="btn btn-call">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>(575) 386-0170</span>
+      </a>
+      <span class="cta-label">Available Nights &amp; Weekends</span>
+    </div>
+
+    <!-- Desktop sidebar small footer -->
+    <div class="sidebar-footer">
+      <div class="contact-info-small">
+        <p>776 Hermosa Dr<br>Chaparral, NM 88081</p>
+        <p><a href="mailto:laurag@jbscustoms.com">laurag@jbscustoms.com</a></p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Mobile Nav Drawer (Slides from left on toggle) -->
+  <div class="sidebar-nav-mobile" id="mobileDrawer">
+    <ul>
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#services" class="nav-link">Our Services</a></li>
+      <li><a href="#about" class="nav-link">About JBS</a></li>
+      <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="mobile-status-container">
+      <div class="status-badge">
+        <span class="pulse-dot"></span>
+        <span class="status-text">Dispatching Now 24/7</span>
+      </div>
+      <div class="contact-info-small" style="font-size: 1rem;">
+        <p><strong>JBS Towing and Recovery</strong></p>
+        <p>776 Hermosa Dr, Chaparral, NM</p>
+        <p><a href="mailto:laurag@jbscustoms.com">laurag@jbscustoms.com</a></p>
+      </div>
+    </div>
   </div>
+
+  <!-- MAIN SCROLLABLE VIEWPORT -->
+  <main class="main-content">
+
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-pattern"></div>
+      
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <span class="pulse-dot" style="background-color: var(--accent-teal);"></span>
+          Emergency Towing &amp; Roadside NM
+        </div>
+        <h1 class="hero-title">
+          Stuck or Stranded?
+          <span>We’ll Get You Moving.</span>
+        </h1>
+        <p class="hero-tagline">
+          JBS Towing and Recovery provides professional, damage-free vehicle towing and emergency roadside assistance in Chaparral, NM, and surrounding areas. Available 24/7, nights, and weekends.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="tel:+15753860170" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>Call (575) 386-0170</span>
+          </a>
+          <a href="#services" class="btn btn-secondary" style="color: var(--bg-white); border-color: rgba(255,255,255,0.4);">
+            <span>Explore Services</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SERVICES SECTION -->
+    <section id="services" class="services">
+      <div class="section-header reveal">
+        <span class="section-subtitle">What We Do</span>
+        <h2 class="section-title">24/7 Professional Towing &amp; Recovery</h2>
+        <p class="section-desc">
+          From emergency breakdown extraction to planned vehicle transports, we are equipped to handle cars, trucks, SUVs, and heavy machinery with damage-free logistics.
+        </p>
+      </div>
+
+      <div class="services-grid reveal-stagger">
+        
+        <!-- Service 1 -->
+        <div class="service-card">
+          <span class="service-number">01 / Emergency Assistance</span>
+          <div class="service-icon-frame">
+            <!-- Tow truck SVG icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h11" />
+              <path d="M19 13h4l1 3v2h-5v-5z" />
+              <circle cx="5.5" cy="18.5" r="2.5" />
+              <circle cx="18.5" cy="18.5" r="2.5" />
+              <path d="M14 6h3l2 4" />
+              <path d="M11 6v12" />
+              <path d="m20 10-6 4" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">24/7 Towing &amp; Recovery</h3>
+          <p class="service-card-desc">
+            Immediate dispatch for breakdown recovery. Available nights, weekends, and holidays. We keep you and your family safe off the road.
+          </p>
+          <ul class="service-features-list">
+            <li class="service-feature-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              24/7 Dispatch Availability
+            </li>
+            <li class="service-feature-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Local &amp; Long Distance Towing
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <span class="service-number">02 / Specialty Transport</span>
+          <div class="service-icon-frame">
+            <!-- Flatbed SVG icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 17h16" />
+              <path d="M5 17a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" />
+              <path d="M13 17a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" />
+              <path d="M18 17h4v-3.5a1.5 1.5 0 0 0-1.5-1.5H19L17.5 8H13v4" />
+              <path d="m3 11 9-3" />
+              <path d="M6 10v2" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Flatbed Towing</h3>
+          <p class="service-card-desc">
+            Perfect for luxury sports cars, AWD SUVs, electric vehicles, and heavily damaged vehicles. Provides maximum safety and zero wear during transport.
+          </p>
+          <ul class="service-features-list">
+            <li class="service-feature-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Zero Road-Contact Transport
+            </li>
+            <li class="service-feature-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Low-Clearance Ramp Loading
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <span class="service-number">03 / Off-Road Extraction</span>
+          <div class="service-icon-frame">
+            <!-- Winching/Hook SVG icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m2 14 3-3 3 3" />
+              <path d="M5 11v7" />
+              <path d="M22 17H9" />
+              <path d="M18 17a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" />
+              <path d="M12 17a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" />
+              <path d="M9 13h5a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-3" />
+              <path d="m11 8-2-2 2-2" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Winching &amp; Recovery</h3>
+          <p class="service-card-desc">
+            Stuck in sand, mud, ditches, or off-road trails? Our advanced winch systems pull your vehicle out safely without causing frame or bumper damage.
+          </p>
+          <ul class="service-features-list">
+            <li class="service-feature-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Sand &amp; Mud Extraction
+            </li>
+            <li class="service-feature-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Ditch &amp; Slope Recovery
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <span class="service-number">04 / Roadside Care</span>
+          <div class="service-icon-frame">
+            <!-- Wrench SVG icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Roadside Assistance</h3>
+          <p class="service-card-desc">
+            Quick-fix services on the spot. We handle dead batteries, flat tires, and locked keys to save you the expense of a full tow when possible.
+          </p>
+          <ul class="service-features-list">
+            <li class="service-feature-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Battery Jump Starts
+            </li>
+            <li class="service-feature-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Tire Changes &amp; Lockout Service
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card">
+          <span class="service-number">05 / Commercial Service</span>
+          <div class="service-icon-frame">
+            <!-- Heavy-duty SVG icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 18H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h7" />
+              <path d="M14 9h7l2 4v5h-9v-9z" />
+              <circle cx="4.5" cy="18.5" r="2.5" />
+              <circle cx="15.5" cy="18.5" r="2.5" />
+              <circle cx="20.5" cy="18.5" r="2.5" />
+              <path d="M10 9h4" />
+              <path d="M14 14h9" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Heavy-Duty Towing</h3>
+          <p class="service-card-desc">
+            Logistical support for large commercial trucks, trailers, construction equipment, and medium-duty machinery. Heavy equipment recovery done right.
+          </p>
+          <ul class="service-features-list">
+            <li class="service-feature-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Medium &amp; Heavy Cargo Transport
+            </li>
+            <li class="service-feature-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Machinery &amp; Equipment Shifting
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. ABOUT SECTION -->
+    <section id="about" class="about">
+      <div class="about-layout">
+        
+        <!-- Text Column -->
+        <div class="about-text-column reveal">
+          <span class="section-subtitle">Who We Are</span>
+          <h2 class="section-title">Chaparral's Trusted Vehicle Recovery Crew</h2>
+          <p class="about-lead">
+            Family-owned, professional towing logistics operating 24 hours a day, 7 days a week.
+          </p>
+          <p class="about-paragraph">
+            JBS Towing and Recovery has been built on response speed, integrity, and safety. Operating out of Chaparral, NM, we serve local neighborhoods, major highways, and border transport lanes. Whether you are stuck off Hermosa Dr, broken down on NM-213, or need a heavy load hauled across state lines, our trained drivers bring state-of-the-art equipment to resolve your issue swiftly.
+          </p>
+          <p class="about-paragraph">
+            We work closely with local law enforcement, insurance carriers, and commercial fleets to ensure that every vehicle recovery is seamless, compliant, and damage-free. 
+          </p>
+          
+          <div class="about-credentials">
+            <div class="credential-item">
+              <div class="credential-bullet">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Fully Licensed &amp; Insured in NM</span>
+            </div>
+            <div class="credential-item">
+              <div class="credential-bullet">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Wreckmaster Certified Recovery Operators</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual/Metrics Column -->
+        <div class="about-visual-column reveal">
+          <div class="about-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=800&q=80" alt="Roadside flat tire rescue by JBS Towing" class="about-image">
+          </div>
+          
+          <!-- Stat card floating on image -->
+          <div class="about-stat-card">
+            <div class="stat-block">
+              <span class="stat-number">&lt; 30m</span>
+              <span class="stat-label">Average Response Time</span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Family Owned &amp; Local</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. TESTIMONIALS SECTION -->
+    <section id="testimonials" class="testimonials">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Customer Voices</span>
+        <h2 class="section-title">What Chaparral Drivers Say</h2>
+        <p class="section-desc">
+          We pride ourselves on 5-star service. Here are real-sounding testimonials from our valued local clients.
+        </p>
+      </div>
+
+      <div class="testimonials-grid reveal-stagger">
+        
+        <!-- Review 1 -->
+        <div class="testimonial-card">
+          <!-- Quote Icon -->
+          <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.944 2c-3.141 1.134-4.944 3.733-4.944 6.725h4v9h-10v-6zm-13 0c0-5.141 3.892-10.519 10-11.725l.944 2c-3.141 1.134-4.944 3.733-4.944 6.725h4v9h-10v-6z"/>
+          </svg>
+          <blockquote class="testimonial-quote">
+            "Absolutely saved my night. I locked my keys inside my vehicle at the Chaparral High School parking lot at 10:30 PM. JBS Towing arrived within 20 minutes of my call and had my SUV door open in under 5 minutes. Friendly service and reasonable pricing."
+          </blockquote>
+          <div class="testimonial-footer">
+            <span class="testimonial-name">Marcus Vance</span>
+            <div class="testimonial-meta">
+              <span class="testimonial-role">Chaparral Resident</span>
+              <div class="testimonial-rating">
+                <!-- 5 stars -->
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card">
+          <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.944 2c-3.141 1.134-4.944 3.733-4.944 6.725h4v9h-10v-6zm-13 0c0-5.141 3.892-10.519 10-11.725l.944 2c-3.141 1.134-4.944 3.733-4.944 6.725h4v9h-10v-6z"/>
+          </svg>
+          <blockquote class="testimonial-quote">
+            "Best flatbed towing service in Southern NM. I needed my project truck transported to El Paso, and they handled it with extreme care. The dispatcher was highly professional, the truck was clean, and the driver secured the vehicle properly. Highly recommend."
+          </blockquote>
+          <div class="testimonial-footer">
+            <span class="testimonial-name">Elena Gutierrez</span>
+            <div class="testimonial-meta">
+              <span class="testimonial-role">Local Business Owner</span>
+              <div class="testimonial-rating">
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="testimonial-card">
+          <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.944 2c-3.141 1.134-4.944 3.733-4.944 6.725h4v9h-10v-6zm-13 0c0-5.141 3.892-10.519 10-11.725l.944 2c-3.141 1.134-4.944 3.733-4.944 6.725h4v9h-10v-6z"/>
+          </svg>
+          <blockquote class="testimonial-quote">
+            "I had a flat tire on NM-404 during rush hour. I called JBS and they dispatched a driver immediately. He arrived within 25 minutes, set up safety cones, and changed my tire in no time. Laura on the phone was extremely comforting during a stressful situation."
+          </blockquote>
+          <div class="testimonial-footer">
+            <span class="testimonial-name">David Miller</span>
+            <div class="testimonial-meta">
+              <span class="testimonial-role">NM Commuter</span>
+              <div class="testimonial-rating">
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <div class="contact-layout">
+        
+        <!-- Contact Form Column -->
+        <div class="contact-form-column reveal">
+          <h3 class="contact-form-title">Send a Dispatch Request</h3>
+          
+          <form id="dispatchForm" action="#" method="POST" onsubmit="handleFormSubmit(event)">
+            <div class="form-group-grid">
+              <div class="form-group">
+                <label for="fullName" class="form-label">Your Name</label>
+                <input type="text" id="fullName" class="form-input" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="tel" id="phoneNumber" class="form-input" placeholder="(575) 555-0199" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="serviceType" class="form-label">Service Needed</label>
+              <input type="text" id="serviceType" class="form-input" placeholder="e.g. Flatbed Towing, Lockout, Jump Start" required>
+            </div>
+
+            <div class="form-group">
+              <label for="location" class="form-label">Current Location / Address</label>
+              <input type="text" id="location" class="form-input" placeholder="e.g. 776 Hermosa Dr or NM-213 Mile Marker 5" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Details / Vehicle Type</label>
+              <textarea id="message" class="form-input" placeholder="e.g. 2018 Silver Ford F-150, engine won't start, key stuck in ignition" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn">
+              <span>Submit Request</span>
+            </button>
+          </form>
+
+          <div class="form-success-msg" id="successMsg">
+            <strong>Request Received!</strong> We have received your query. If you require immediate emergency towing, please call us directly at <a href="tel:+15753860170" style="text-decoration: underline; font-weight: 700;">(575) 386-0170</a>.
+          </div>
+        </div>
+
+        <!-- Contact Details & Map Column -->
+        <div class="contact-details-column reveal">
+          
+          <!-- Direct Details Cards -->
+          <div class="contact-info-list">
+            
+            <!-- Phone -->
+            <div class="info-card">
+              <div class="info-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="info-card-content">
+                <span class="info-card-label">Call Dispatch</span>
+                <span class="info-card-value">
+                  <a href="tel:+15753860170">+1 575-386-0170</a>
+                </span>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="info-card">
+              <div class="info-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="info-card-content">
+                <span class="info-card-label">Send Email</span>
+                <span class="info-card-value">
+                  <a href="mailto:laurag@jbscustoms.com">laurag@jbscustoms.com</a>
+                </span>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="info-card">
+              <div class="info-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="info-card-content">
+                <span class="info-card-label">Office Address</span>
+                <span class="info-card-value">
+                  <a href="https://maps.google.com/?q=776+Hermosa+Dr,+Chaparral,+NM+88081" target="_blank" rel="noopener noreferrer">
+                    776 Hermosa Dr<br>Chaparral, NM 88081
+                  </a>
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Maps Embed -->
+          <div class="map-wrapper">
+            <iframe 
+              src="https://maps.google.com/maps?q=776%20Hermosa%20Dr,%20Chaparral,%20NM%2088081&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade" 
+              title="JBS Towing and Recovery location Map Chaparral New Mexico">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="footer">
+      <div class="footer-layout">
+        
+        <div class="footer-top">
+          <div class="footer-logo">
+            <span class="footer-logo-accent">JBS</span>
+            <span class="footer-logo-text">Towing &amp; Recovery</span>
+          </div>
+
+          <ul class="footer-nav">
+            <li><a href="#hero" class="footer-nav-link">Home</a></li>
+            <li><a href="#services" class="footer-nav-link">Services</a></li>
+            <li><a href="#about" class="footer-nav-link">About Us</a></li>
+            <li><a href="#testimonials" class="footer-nav-link">Testimonials</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+          <span class="copyright">
+            &copy; 2026 JBS Towing and Recovery. All Rights Reserved.
+          </span>
+          <ul class="legal-links">
+            <li><a href="#contact" class="legal-link">Privacy Policy</a></li>
+            <li><a href="#contact" class="legal-link">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- MOBILE FIXED BOTTOM CALL BAR -->
+  <div class="mobile-call-bar">
+    <a href="tel:+15753860170" class="btn btn-mobile-call">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-icon" style="width: 24px; height: 24px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <strong>Call Emergency Dispatch Now</strong>
+    </a>
+  </div>
+
 </div>
 
-<!-- ===== HERO ===== -->
-<section class="hero">
-  <div class="hero-text-col">
-    <div class="hero-badge">Cleaning Service</div>
-    <h1>JBS Towing and Recovery</h1>
-    <p class="hero-sub">Professional Cleaning Service services in Chaparral, NM. Reliable, thorough, and built on genuine 5-star reviews.</p>
-    <div class="hero-rating" style="display: flex;">
-      <span class="hero-stars">★★★★★</span>
-      <span>4.7 ·  Google reviews</span>
-    </div>
-    <div class="hero-actions">
-      <a href="tel:+1 575-386-0170" class="btn-primary">📞 Call Now</a>
-      <a href="#" target="_blank" rel="noopener" class="btn-outline">📍 See on Google</a>
-    </div>
-  </div>
-  <div class="hero-img-col" aria-hidden="true"></div>
-</section>
+<!-- INTERACTIVE SCRIPTS -->
+<script>
+  // Mobile drawer navigation toggle
+  const menuToggle = document.getElementById('menuToggle');
+  const appContainer = document.getElementById('appContainer');
+  const mobileDrawer = document.getElementById('mobileDrawer');
+  const mobileNavLinks = mobileDrawer.querySelectorAll('.nav-link');
 
-<!-- ===== SERVICES ===== -->
-<section class="section section--tinted">
-  <div class="wrap">
-    <div class="section-header">
-      <div class="section-label">What We Do</div>
-      <h2 class="section-title">Our Services</h2>
-    </div>
-    <div class="services-grid">
+  menuToggle.addEventListener('click', () => {
+    appContainer.classList.toggle('nav-open');
+  });
 
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Regular Home Cleaning</h3>
-      <p>Weekly or bi-weekly cleaning to keep your home spotless and fresh.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Deep Cleaning</h3>
-      <p>Thorough top-to-bottom cleaning for kitchens, bathrooms, and all living areas.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Move-In / Move-Out Clean</h3>
-      <p>Get your space move-in ready or leave it spotless when you go.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Office & Commercial Clean</h3>
-      <p>Keep your workspace professional, sanitized, and employee-ready.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Post-Construction Clean</h3>
-      <p>Remove dust, debris, and residues after renovation or building work.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🧹</div>
-      <h3>Eco-Friendly Options</h3>
-      <p>Green cleaning products available — safe for kids, pets, and the planet.</p>
-    </div>
-    </div>
-  </div>
-</section>
+  // Close drawer on link click
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      appContainer.classList.remove('nav-open');
+    });
+  });
 
-<!-- ===== INFO + MAP ===== -->
-<section class="section section--white">
-  <div class="wrap wrap--narrow">
-    <div class="section-header">
-      <div class="section-label">Find Us</div>
-      <h2 class="section-title">Contact &amp; Location</h2>
-    </div>
-    <div class="info-strip">
-      <div class="info-item">
-        <div class="info-item-label">📍 Address</div>
-        <div class="info-item-value">776 Hermosa Dr</div>
-      </div>
-      <div class="info-item">
-        <div class="info-item-label">📞 Phone</div>
-        <div class="info-item-value"><a href="tel:+1 575-386-0170" class="info-link">+1 575-386-0170</a></div>
-      </div>
-      <div class="info-item">
-        <div class="info-item-label">🕐 Service Area</div>
-        <div class="info-item-value">Chaparral, NM &amp; surrounding areas</div>
-      </div>
-    </div>
-    <div class="map-wrap">
-      <iframe
-        title="JBS Towing and Recovery location"
-        loading="lazy"
-        allowfullscreen
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=776+Hermosa+Dr&amp;output=embed">
-      </iframe>
-    </div>
-  </div>
-</section>
+  // SCROLL-TRIGGERED ANIMATIONS USING INTERSECTION OBSERVER
+  const revealOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.12
+  };
 
-<!-- ===== FOOTER ===== -->
-<footer>
-  <div class="footer-inner">
-    <p><strong>JBS Towing and Recovery</strong> &nbsp;·&nbsp; 776 Hermosa Dr</p>
-    <p style="margin-top:8px;">+1 575-386-0170</p>
-    <p style="margin-top:12px;">Preview site built by <a href="https://clawops.studio" target="_blank">ClawOps Studio</a></p>
-  </div>
-</footer>
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        // Unobserve once triggered to lock animation state
+        observer.unobserve(entry.target);
+      }
+    });
+  }, revealOptions);
 
-<!-- ===== STICKY CTA ===== -->
-<div class="pad-bottom"></div>
-<div class="sticky-bar">
-  <div class="sticky-bar-info">
-    <div class="sticky-bar-name">JBS Towing and Recovery</div>
-    <div class="sticky-bar-phone">+1 575-386-0170</div>
-  </div>
-  <a href="tel:+1 575-386-0170" class="sticky-cta">📞 Call Now</a>
-</div>
+  // Set staggered delay index on card list items dynamically
+  document.querySelectorAll('.reveal-stagger').forEach((staggerContainer) => {
+    const children = staggerContainer.children;
+    Array.from(children).forEach((child, index) => {
+      child.style.transitionDelay = `${index * 0.15}s`;
+    });
+  });
+
+  // Observe items
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(elem => {
+    revealObserver.observe(elem);
+  });
+
+  // SCROLL SPY ALGORITHM FOR SIDEBAR NAV LINKS ACTIVE STATE
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.sidebar-nav .nav-link, .sidebar-nav-mobile .nav-link');
+
+  window.addEventListener('scroll', () => {
+    let current = 'hero';
+    const scrollY = window.pageYOffset;
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      const sectionHeight = section.offsetHeight;
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('active');
+      }
+    });
+  });
+
+  // DUMMY CONTACT FORM SUCCESS SIMULATOR
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const form = document.getElementById('dispatchForm');
+    const successMsg = document.getElementById('successMsg');
+    
+    // Hide form with fade effect
+    form.style.opacity = '0';
+    setTimeout(() => {
+      form.style.display = 'none';
+      successMsg.style.display = 'block';
+      successMsg.style.opacity = '0';
+      successMsg.style.transition = 'opacity 0.4s ease';
+      setTimeout(() => {
+        successMsg.style.opacity = '1';
+      }, 50);
+    }, 400);
+  }
+</script>
 
 </body>
 </html>
